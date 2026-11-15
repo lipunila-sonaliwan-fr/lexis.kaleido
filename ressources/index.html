@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="generator" content="Kaléido (Lexis+)">
+<title>{{titre}}</title>
+<link rel="stylesheet" href="lecteur.css">
+</head>
+<body>
+<div id="app" class="app">
+  <header class="barre">
+    <button class="icone" id="b-menu" title="Navigation" aria-label="Navigation">☰</button>
+    <a class="marque" href="#accueil"><span class="logo">◆</span><span id="titre-site"></span></a>
+    <div class="recherche"><input id="q" type="search" placeholder="Rechercher…  ( / )" autocomplete="off" aria-label="Recherche plein texte"><div id="resultats" class="resultats" hidden></div></div>
+    <div class="outils">
+      <button class="icone" id="b-moins" title="Réduire le texte (Ctrl -)">A−</button>
+      <button class="icone" id="b-plus" title="Agrandir le texte (Ctrl +)">A+</button>
+      <button class="icone" id="b-favori" title="Ajouter aux favoris">☆</button>
+      <button class="icone" id="b-theme" title="Thème clair / sombre">◐</button>
+    </div>
+  </header>
+  <nav id="nav" class="nav" aria-label="Navigation hiérarchique"></nav>
+  <main id="contenu" class="contenu" tabindex="-1"></main>
+  <aside id="toc" class="toc" aria-label="Sommaire"></aside>
+</div>
+<div id="voile" class="voile" hidden></div>
+<button id="b-annoter" class="annoter" hidden>✎ Annoter</button>
+<script src="contenu.js"></script>
+<script src="lecteur.js"></script>
+</body>
+</html>
